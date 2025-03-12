@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Embed Link Opener",
+  "version": "1.2",
+  "description": "Open YouTube videos in embed format and pause current video.",
+  "permissions": ["tabs", "activeTab"],
+  "host_permissions": [
+    "https://www.youtube.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
