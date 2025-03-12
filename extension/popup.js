@@ -14,39 +14,12 @@ document.getElementById('openEmbed').addEventListener('click', () => {
 });
 
 document.getElementById('openCurrentVideo').addEventListener('click', () => {
-  // Get the active tab
+  // Send a message to the content script to open the embed link and pause the video
   chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
     const tab = tabs[0];
-
-    // Ensure that we have access to chrome.scripting and that the tab is correct
-    if (chrome.scripting) {
-      // Execute the script in the active tab to pause the video and open embed link
-      chrome.scripting.executeScript({
-        target: { tabId: tab.id },
-        func: openEmbedAndPause
-      });
-    } else {
-      // console.error('chrome.scripting is not available.');
-    }
+    chrome.scripting.executeScript({
+      target: { tabId: tab.id },
+      func: () => chrome.runtime.sendMessage({ action: "open_embed_and_pause" })
+    });
   });
 });
-
-// Function to be executed in the content script context
-function openEmbedAndPause() {
-  const currentUrl = window.location.href;
-
-  // Pause the current video
-  const videoElement = document.querySelector('video');
-  if (videoElement && !videoElement.paused) {
-    videoElement.pause();
-  }
-
-  // Extract the video ID and open embed version in a new tab
-  const regex = /(?:https?:\/\/)?(?:www\.)?youtube\.com\/(?:watch\?v=|(?:.*\/)?)([\w-]{11})/;
-  const match = currentUrl.match(regex);
-  if (match) {
-    const videoId = match[1];
-    const embedUrl = `https://www.youtube.com/embed/${videoId}`;
-    window.open(embedUrl, "_blank", "width=800,height=600");
-  }
-}

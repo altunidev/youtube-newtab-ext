@@ -4,15 +4,15 @@
   "version": "1.2",
   "description": "Open YouTube videos in embed format and pause current video.",
   "permissions": ["tabs", "activeTab"],
-  "host_permissions": [
-    "https://www.youtube.com/*"
-  ],
   "action": {
     "default_popup": "popup.html"
   },
   "background": {
     "service_worker": "background.js"
   },
+  "host_permissions": [
+    "https://www.youtube.com/*"
+  ],
   "content_scripts": [
     {
       "matches": ["https://www.youtube.com/*"],
