@@ -294,3 +294,7 @@ When you're on YouTube and want to open a video in embed format, you can either:
 - Use the **"Open Current Video in Embed"** button to open and pause the video automatically.
 
 Let me know if you'd like further adjustments!
+
+---
+
+Everything else was pretty much fine tuning tweaks and such to the CSS of the popup window. Pretty standard stuff I suppose. Made some lil tweaks but I don't really care about professionalism or refinement on this tiny bit of practice here anyway.
