@@ -15,6 +15,13 @@ I didn't spend much more than an hour with chatgpt and testing this practically,
 
 ---
 
+## What does it do?
+
+Pretty simple so far:
+![chrome_RwkZFUExrI](https://github.com/user-attachments/assets/26088734-e79d-4d37-9808-96dd97ce0b71)
+
+---
+
 - **Q:** The "Open Current Video in Embed" doesn't work.
   - **A:** I know. I'm too lazy to fix it. The idea behind it is simply to open the video in a new tab, pause the current video (or advert), and begin playing the desired video.
 - **Q:** The "Paste YouTube URL here" box is slightly wider than the other two buttons below it.
