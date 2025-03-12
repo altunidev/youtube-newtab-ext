@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "YouTube Embeded Link Opener",
+    "version": "1.0",
+    "description": "Opens YouTube videos as embed links in a new tab.",
+    "permissions": ["tabs"],
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "host_permissions": [
+      "https://www.youtube.com/*"
+    ]
+  }
+  
