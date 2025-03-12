@@ -14,11 +14,9 @@ I didn't spend much more than an hour with chatgpt and testing this practically,
 
 ---
 
-Q: The "Open Current Video in Embed" doesn't work.
-A: I know. I'm too lazy to fix it. The idea behind it is simply to open the video in a new tab, pause the current video (or advert), and begin playing the desired video.
-
-Q: The "Paste YouTube URL here" box is slightly wider than the other two buttons below it.
-A: Next question please.
-
-Q: Did I just ge--
-A: No. Everything is normal, there is nothing to worry about.
+- **Q:** The "Open Current Video in Embed" doesn't work.
+  - **A:** I know. I'm too lazy to fix it. The idea behind it is simply to open the video in a new tab, pause the current video (or advert), and begin playing the desired video.
+- **Q:** The "Paste YouTube URL here" box is slightly wider than the other two buttons below it.
+  - **A:** Next question please.
+- **Q:** Did I just ge--
+  - **A:** No. Everything is normal, there is nothing to worry about.
