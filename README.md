@@ -7,10 +7,11 @@ I didn't spend much more than an hour with chatgpt and testing this practically,
 ---
 
 ## How to Load Your Extension
-1. Open Chrome and go to chrome://extensions/
+1. Open Chrome and go to `chrome://extensions/`
 1. Enable "Developer mode" in the top-right corner.
-1. Click "Load unpacked" and select the folder containing this extension.
-1. The extension icon should now appear in your toolbar.
+1. Click "Load unpacked" and select the folder containing this extension (named `extension` in this repository).
+1. The extension icon should now appear in your extensions button.
+1. Pin the extension to keep it on the toolbar.
 
 ---
 
